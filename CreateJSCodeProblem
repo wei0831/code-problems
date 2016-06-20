@@ -1,0 +1,7 @@
+# Create from template
+cp -r js-0 $1
+cd $1
+
+# Clean and Install all dependencies
+grunt clean
+npm install

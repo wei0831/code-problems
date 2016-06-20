@@ -1,0 +1,29 @@
+{
+  "name": "js-zero",
+  "version": "1.0.0",
+  "description": "js code problem template",
+  "main": "main.js",
+  "scripts": {
+    "start" : "node code/main.js",
+    "test": "node spec/jasmine-runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wei0831/code-problems.git"
+  },
+  "author": "Jack Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wei0831/code-problems/issues"
+  },
+  "homepage": "https://github.com/wei0831/code-problems#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "jasmine": "^2.4.1",
+    "jasmine-spec-reporter": "^2.5.0",
+    "jshint-stylish": "^2.2.0"
+  }
+}
