@@ -4,8 +4,10 @@ found_error=0
 for dir in `find . -maxdepth 1 -name "js-*" -type d `
 do
   if [ -d "${dir}" ]; then
-      cd "${dir}"
-      npm install -s
+      cd ${dir}
+
+      echo "Testing...[" ${dir} "]"
+      npm install -s > /dev/null
 
       grunt check &> grunt-output.log
       if cat grunt-output.log | grep -q 'Aborted'; then

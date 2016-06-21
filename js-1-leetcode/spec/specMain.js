@@ -74,14 +74,13 @@ describe("Positive Inputs Only", function() {
 
 });
 
-
 describe("Including Negative Inputs", function() {
     "use strict";
 
     it("[-1, 2, 1, 0] Target 1 = [0, 1]", function() {
         var input = [-1, 2, 1, 0];
         var target = 1;
-        var output = [0, 2];
+        var output = [0, 1];
 
         expect(answer.result(input, target)).toEqual(output);
     });

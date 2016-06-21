@@ -1,4 +1,4 @@
-# Code Problems
+# Code Problems [![Build Status](https://travis-ci.org/wei0831/code-problems.svg?branch=master)](https://travis-ci.org/wei0831/code-problems)
 Practice Code problems
 
 ## How to Run?
