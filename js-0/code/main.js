@@ -2,10 +2,28 @@
  * Authoer: Jack Chang
  * Data: 06/20/2016
  */
-function main() {
-    "use strict";
 
-    console.log("This is main");
+// Implemention
+function implemention(){
+    var private_function = function() {
+        return true;
+    };
+
+    return {
+        result: function() {
+            return private_function();
+        }
+    }
+};
+// Export Functions
+if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
+    module.exports = implemention;
 }
 
-main();
+// Main
+(function() {
+    "use strict";
+
+    var answer = new implemention();
+    console.log("This is main : ", answer.result());
+})();
