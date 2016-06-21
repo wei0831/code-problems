@@ -1,4 +1,5 @@
 language: node_js
 node_js:
   - "6"
-script: "cd js-1-leetcode && npm install && npm test"
+script:
+  - bash .travis-test.sh
