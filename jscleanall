@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for dir in `find . -maxdepth 1 -name "js-*" -type d `
+do
+  if [ -d "${dir}" ]; then
+      cd ${dir}
+      grunt clean
+      cd ..
+  fi
+done
