@@ -14,7 +14,8 @@ module.exports = function(grunt) {
                 ],
                 reporter: require('jshint-stylish'),
                 strict: true,
-                jasmine: true
+                jasmine: true,
+                '-W032': true
             }
         },
 

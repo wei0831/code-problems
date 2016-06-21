@@ -4,8 +4,11 @@
  */
 
 // Implemention
-function implemention(){
+function Implemention() {
+    "use strict";
+
     var private_function = function() {
+
         return true;
     };
 
@@ -13,17 +16,17 @@ function implemention(){
         result: function() {
             return private_function();
         }
-    }
+    };
 };
 // Export Functions
 if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = implemention;
+    module.exports = Implemention;
 }
 
 // Main
 (function() {
     "use strict";
 
-    var answer = new implemention();
+    var answer = new Implemention();
     console.log("This is main : ", answer.result());
 })();
