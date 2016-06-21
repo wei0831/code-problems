@@ -24,10 +24,10 @@ if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
     module.exports = Implemention;
 }
 
-// Main
-(function() {
-    "use strict";
-
-    var answer = new Implemention();
-    console.log("This is main : ", answer.result());
-})();
+// // Main
+// (function() {
+//     "use strict";
+//
+//     var answer = new Implemention();
+//     console.log("This is main : ", answer.result());
+// })();
