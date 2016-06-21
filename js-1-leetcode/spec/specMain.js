@@ -81,7 +81,7 @@ describe("Including Negative Inputs", function() {
     it("[-1, 2, 1, 0] Target 1 = [0, 1]", function() {
         var input = [-1, 2, 1, 0];
         var target = 1;
-        var output = [0, 1];
+        var output = [0, 2];
 
         expect(answer.result(input, target)).toEqual(output);
     });
