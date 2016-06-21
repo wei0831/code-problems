@@ -17,7 +17,8 @@ function Implemention() {
             return private_function();
         }
     };
-};
+}
+
 // Export Functions
 if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
     module.exports = Implemention;
