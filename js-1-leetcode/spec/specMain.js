@@ -74,7 +74,6 @@ describe("Positive Inputs Only", function() {
 
 });
 
-
 describe("Including Negative Inputs", function() {
     "use strict";
 
