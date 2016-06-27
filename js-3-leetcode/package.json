@@ -17,7 +17,10 @@
     "url": "https://github.com/wei0831/code-problems/issues"
   },
   "homepage": "https://github.com/wei0831/code-problems#readme",
-  "dependencies": {},
+  "dependencies": {
+    "performance-now": "^0.2.0",
+    "randomstring": "^1.1.5"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
