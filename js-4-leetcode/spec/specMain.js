@@ -139,6 +139,7 @@ describe("Two Sorted Array Test Cases", function() {
 });
 
 describe("Two Random Sorted Array Test Cases", function() {
+    "use strict";
     var input1 = [];
     var input2 = [];
     var output;
@@ -172,7 +173,7 @@ describe("Two Random Sorted Array Test Cases", function() {
     input2 = input1.splice(0, getRandomIntInclusive(0, input1.length));
     input1.sort();
     input2.sort();
-    
+
     it("Input [" + input1 + "], [" + input2 + "] = " + output, function() {
         expect(answer.result(input1, input2)).toEqual(output);
     });

@@ -63,7 +63,7 @@ function Implemention() {
         } else {
             return num1;
         }
-    }
+    };
 
     return {
         result: function(nums1, nums2) {
