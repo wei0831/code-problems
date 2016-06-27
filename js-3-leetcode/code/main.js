@@ -7,14 +7,13 @@
 function Implemention() {
     "use strict";
 
-    var private_function = function() {
+    var lengthOfLongestSubstring = function(s) {
 
-        return true;
     };
 
     return {
-        result: function() {
-            return private_function();
+        result: function(s) {
+            return lengthOfLongestSubstring(s);
         }
     };
 }

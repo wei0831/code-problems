@@ -1,5 +1,4 @@
 # Code Problem Zero
-Code Problem Project Template
 
 ##Problem
 N/A
