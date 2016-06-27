@@ -1,4 +1,4 @@
-# Code Problem One
+# Code Problem 1
 
 ##Problem
 ####[Two Sum](https://leetcode.com/problems/two-sum/)
