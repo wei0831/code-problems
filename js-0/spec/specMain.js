@@ -2,8 +2,8 @@
  * Authoer: Jack Chang
  * Data: 06/20/2016
  */
-var Implemention = require('../code/main');
-var answer = new Implemention();
+var Implementation = require('../code/main');
+var answer = new Implementation();
 
 describe("Test Code Problem", function() {
     "use strict";

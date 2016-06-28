@@ -5,10 +5,13 @@ Practice Code problems
 Go to each problem's folder
 
 ## Folder Naming  
-[language]-[#]-[source]
+- [language]-[#]-[source]  
+**Example:**
+js-1-leetcode = Javascript Problem #1 from leetcode
 
-**Example:**  
-js-1-leetcode = Javascript Problem#1 from leetcode
+- [language]-[data structure/algorithm]  
+**Example:**
+js-linkedlist = Javascript Linkedlist
 
 ## Author
 Jack Chang

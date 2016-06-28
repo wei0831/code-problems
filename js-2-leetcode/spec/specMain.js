@@ -2,9 +2,9 @@
  * Authoer: Jack Chang
  * Data: 06/20/2016
  */
-var Implemention = require('../code/main');
+var Implementation = require('../code/main');
 var ListNode = require("../code/linkedlist");
-var answer = new Implemention();
+var answer = new Implementation();
 
 describe("Test Code Problem", function() {
     "use strict";

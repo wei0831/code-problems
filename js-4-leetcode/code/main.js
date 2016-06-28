@@ -3,8 +3,8 @@
  * Data: 06/20/2016
  */
 
-// Implemention
-function Implemention() {
+// Implementation
+function Implementation() {
     "use strict";
 
     /**
@@ -74,14 +74,14 @@ function Implemention() {
 
 // Export Functions
 if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = Implemention;
+    module.exports = Implementation;
 }
 
 // Main
 (function() {
     "use strict";
 
-    // var answer = new Implemention();
+    // var answer = new Implementation();
     // console.log(answer.result([1, 2], [3, 4, 5]));
 
 })();

@@ -4,8 +4,8 @@
  */
 var ListNode = require("./linkedlist");
 
-// Implemention
-function Implemention() {
+// Implementation
+function Implementation() {
     "use strict";
 
     var addTwoNumbers = function(l1, l2) {
@@ -49,13 +49,13 @@ function Implemention() {
 
 // Export Functions
 if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = Implemention;
+    module.exports = Implementation;
 }
 
 // Main
 (function() {
     "use strict";
 
-    // var answer = new Implemention();
+    // var answer = new Implementation();
     // console.log("This is main : ", answer.result());
 })();
