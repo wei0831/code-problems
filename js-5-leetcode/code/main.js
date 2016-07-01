@@ -12,9 +12,11 @@ function Implementation() {
     "use strict";
 
     /**
-     * private Function
+     * Find Longest Plindrome Substring
      *
      * @function
+     * @param {string} s - Input String
+     * @return {string} Longest Plindrome Substring
      */
     var _longestPalindrome = function(s) {
         var start = 0;
@@ -32,6 +34,15 @@ function Implementation() {
         return s.substring(start, end + 1);
     };
 
+    /**
+     * Helper Function: Expend to find palindrome length
+     *
+     * @function
+     * @param {string} s - Input String
+     * @param {number} l - Index Left Side to expend
+     * @param {number} r - Index Right Side to expend
+     * @return {number} Length of the Palindrome
+     */
     var _findPalindrome = function(s, l, r) {
         while (l >= 0 && r < s.length && s[l] === s[r]) {
             --l;
@@ -43,10 +54,6 @@ function Implementation() {
     return {
         v1: function(s) {
             return _longestPalindrome(s);
-        },
-
-        _helper: function(s, l, r) {
-            return _findPalindrome(s, l, r);
         }
     };
 }
