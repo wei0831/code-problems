@@ -1,30 +1,36 @@
 /**
- * Authoer: Jack Chang
- * Data: 06/20/2016
+ *
+ * @author Jack Chang
  */
 
-// Implementation
+/**
+ * Implementation class
+ *
+ * @class
+ */
 function Implementation() {
     "use strict";
 
+    /**
+     * private Function
+     *
+     * @function
+     */
     var private_function = function() {
 
         return true;
     };
 
     return {
-        result: function() {
+        v1: function() {
             return private_function();
         }
     };
 }
 
-// Export Functions
-if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = Implementation;
-}
-
-// Main
+/**
+ * Main
+ */
 (function() {
     "use strict";
 
@@ -32,3 +38,5 @@ if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
     // console.log("This is main : ", answer.result());
 
 })();
+
+module.exports = Implementation;

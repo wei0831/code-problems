@@ -1,7 +1,7 @@
 /**
- * Authoer: Jack Chang
- * Data: 06/20/2016
+ * @author Jack Chang
  */
+
 var Implementation = require('../code/main');
 var answer = new Implementation();
 
@@ -17,7 +17,7 @@ describe("Some Test", function() {
     "use strict";
 
     it("expects true to be true", function() {
-        expect(answer.result()).toEqual(true);
+        expect(answer.v1()).toEqual(true);
     });
 
 });

@@ -1,6 +1,5 @@
 /**
- * Authoer: Jack Chang
- * Data: 06/20/2016
+ * @author Jack Chang
  */
 
 var Jasmine = require('jasmine');
