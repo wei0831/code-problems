@@ -146,7 +146,18 @@ BinaryHeap.prototype = {
             this._heap[swap] = element;
             n = swap;
         }
+    },
+
+    _heapify: function() {
+        "use strict";
+        var length = this._heap.length;
+        var lastParent = Math.floor(length / 2) - 1;
+
+        for (var i = lastParent; i >= 0; --i) {
+            this._sinkDown(i);
+        }
     }
+
 };
 
 // Export Functions

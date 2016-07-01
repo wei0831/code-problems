@@ -116,4 +116,43 @@ describe("BinaryHeap: Default Min-Heap, Storing Integer", function() {
         expect(bh.size()).toEqual(0);
     });
 
+    it("Push[5, 2, 1, 7, 8, 6, 4, 3] Pop All", function() {
+        var bh = new BinaryHeap();
+        var input = [5, 2, 1, 7, 8, 6, 4, 3];
+
+        input.forEach(function(x) {
+            bh.push(x);
+        });
+
+        expect(bh.pop()).toEqual(1);
+        expect(bh.pop()).toEqual(2);
+        expect(bh.pop()).toEqual(3);
+        expect(bh.pop()).toEqual(4);
+        expect(bh.pop()).toEqual(5);
+        expect(bh.pop()).toEqual(6);
+        expect(bh.pop()).toEqual(7);
+        expect(bh.pop()).toEqual(8);
+    });
+
+    it("Raw [0, 5, 2, 1, 7, 3, 6, 4, 8] Heapify Pop All", function() {
+        var bh = new BinaryHeap();
+        var input = [0, 5, 2, 1, 7, 3, 6, 4, 8];
+
+        input.forEach(function(x) {
+            bh._heap.push(x);
+        });
+
+        bh._heapify();
+
+        expect(bh.pop()).toEqual(0);
+        expect(bh.pop()).toEqual(1);
+        expect(bh.pop()).toEqual(2);
+        expect(bh.pop()).toEqual(3);
+        expect(bh.pop()).toEqual(4);
+        expect(bh.pop()).toEqual(5);
+        expect(bh.pop()).toEqual(6);
+        expect(bh.pop()).toEqual(7);
+        expect(bh.pop()).toEqual(8);
+    });
+
 });
