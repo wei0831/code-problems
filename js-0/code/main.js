@@ -35,7 +35,6 @@ function Implementation() {
     "use strict";
 
     // var answer = new Implementation();
-    // console.log("This is main : ", answer.result());
 
 })();
 
