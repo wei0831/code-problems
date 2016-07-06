@@ -13,7 +13,7 @@ describe("Test Code Problem", function() {
     });
 });
 
-describe("Some Test", function() {
+describe("V1 Test Cases", function() {
     "use strict";
 
     it("expects true to be true", function() {
