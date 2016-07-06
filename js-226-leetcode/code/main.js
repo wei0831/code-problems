@@ -13,9 +13,11 @@ function Implementation() {
     "use strict";
 
     /**
-     * private Function
+     * Invert BinaryTree
      *
      * @function
+     * @param {object} root TreeNode
+     * @return {object|null} Root
      */
     var invertTree = function(root) {
         if (root === null) {
