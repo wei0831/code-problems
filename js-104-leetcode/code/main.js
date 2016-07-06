@@ -2,6 +2,7 @@
  *
  * @author Jack Chang
  */
+var TreeNode = require('./treenode');
 
 /**
  * Implementation class
@@ -11,11 +12,6 @@
 function Implementation() {
     "use strict";
 
-    function TreeNode(val) {
-        this.val = val;
-        this.left = this.right = null;
-    }
-
     /**
      * private Function
      *
@@ -24,16 +20,19 @@ function Implementation() {
      * @return {number}
      */
     var maxDepth = function(root) {
+        if (root === null) {
+            return 0;
+        }
 
+        var left = maxDepth(root.left);
+        var right = maxDepth(root.right);
+
+        return Math.max(left, right) + 1;
     };
 
     return {
         v1: function(root) {
             return maxDepth(root);
-        },
-
-        TreeNode: function(val){
-          return TreeNode(val);
         }
     };
 }
