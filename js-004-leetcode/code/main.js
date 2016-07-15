@@ -19,7 +19,7 @@ function Implementation() {
      * @param {number} k
      * @return {number}
      */
-    function findKthSmallest(ar1, start1, ar2, start2, k) {
+    var findKthSmallest = function(ar1, start1, ar2, start2, k) {
         var len1 = ar1.length - start1;
         var len2 = ar2.length - start2;
 
@@ -47,7 +47,7 @@ function Implementation() {
         } else {
             return num1;
         }
-    }
+    };
 
     /**
      * @param {number[]} nums1

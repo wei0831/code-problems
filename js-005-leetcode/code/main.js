@@ -20,13 +20,13 @@ function Implementation() {
      * @param {number} r - Index Right Side to expend
      * @return {number} Length of the Palindrome
      */
-    function _findPalindrome(s, l, r) {
+    var _findPalindrome = function(s, l, r) {
         while (l >= 0 && r < s.length && s[l] === s[r]) {
             --l;
             ++r;
         }
         return r - l - 1;
-    }
+    };
 
     /**
      * Find Longest Plindrome Substring
