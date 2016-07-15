@@ -10,6 +10,23 @@
  */
 function Implementation() {
     "use strict";
+    /**
+     * Helper Function: Expend to find palindrome length
+     *
+     * @function
+     * @private
+     * @param {string} s - Input String
+     * @param {number} l - Index Left Side to expend
+     * @param {number} r - Index Right Side to expend
+     * @return {number} Length of the Palindrome
+     */
+    function _findPalindrome(s, l, r) {
+        while (l >= 0 && r < s.length && s[l] === s[r]) {
+            --l;
+            ++r;
+        }
+        return r - l - 1;
+    }
 
     /**
      * Find Longest Plindrome Substring
@@ -34,41 +51,21 @@ function Implementation() {
         return s.substring(start, end + 1);
     };
 
-    /**
-     * Helper Function: Expend to find palindrome length
-     *
-     * @function
-     * @private
-     * @param {string} s - Input String
-     * @param {number} l - Index Left Side to expend
-     * @param {number} r - Index Right Side to expend
-     * @return {number} Length of the Palindrome
-     */
-    var _findPalindrome = function(s, l, r) {
-        while (l >= 0 && r < s.length && s[l] === s[r]) {
-            --l;
-            ++r;
-        }
-        return r - l - 1;
-    };
-
     return {
-        v1: function(s) {
-            return longestPalindrome(s);
-        }
+        v1: longestPalindrome
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-    // var test = "abac";
-    // console.log(answer.v1(test));
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//     // var test = "abac";
+//     // console.log(answer.v1(test));
+//
+// }());
 
 module.exports = Implementation;

@@ -23,20 +23,18 @@ function Implementation() {
     };
 
     return {
-        v1: function(n) {
-            return canWinNim(n);
-        }
+        v1: canWinNim
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//
+// }());
 
 module.exports = Implementation;

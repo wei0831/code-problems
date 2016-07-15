@@ -27,15 +27,8 @@ function Implementation() {
     };
 
     return {
-        result: function(nums, target) {
-            return twoSum(nums, target);
-        }
+        result: twoSum
     };
-}
-
-// Export Functions
-if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = Implementation;
 }
 
 // // Main
@@ -44,4 +37,6 @@ if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
 //
 //     var answer = new Implementation();
 //     console.log("Result : ", answer.result([1, 2, 3], 0));
-// })();
+// }());
+
+module.exports = Implementation;

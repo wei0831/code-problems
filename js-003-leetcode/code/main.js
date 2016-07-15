@@ -45,68 +45,59 @@ function Implementation() {
     };
 
     return {
-        result: function(s) {
-            return lengthOfLongestSubstring_v1(s);
-        },
-        v1: function(s) {
-            return lengthOfLongestSubstring_v1(s);
-        },
-        v2: function(s) {
-            return lengthOfLongestSubstring_v2(s);
-        }
+        result: lengthOfLongestSubstring_v1,
+        v1: lengthOfLongestSubstring_v1,
+        v2: lengthOfLongestSubstring_v2
     };
 }
 
-// Export Functions
-if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = Implementation;
-}
-
 // Main
-(function() {
-    "use strict";
+// (function() {
+//     "use strict";
+//
+//     var answer = new Implementation();
+//     var now = require("performance-now");
+//     var randomstring = require("randomstring");
+//     var i;
+//     var start;
+//     var end;
+//
+//     console.log("==== Fixed String ====");
+//
+//     start = now();
+//     for (i = 0; i < 10000; ++i) {
+//         answer.v1("ababababababcdefabc");
+//     }
+//     end = now();
+//
+//     console.log("V1 took " + ((end - start).toFixed(3)) + " milliseconds.");
+//
+//     start = now();
+//     for (i = 0; i < 10000; ++i) {
+//         answer.v2("ababababababcdefabc");
+//     }
+//     end = now();
+//
+//     console.log("V2 took " + ((end - start).toFixed(3)) + " milliseconds.");
+//
+//     console.log("==== Random same length String ====");
+//
+//     start = now();
+//     for (i = 0; i < 10000; ++i) {
+//         answer.v1(randomstring.generate(10));
+//     }
+//     end = now();
+//
+//     console.log("V1 took " + ((end - start).toFixed(3)) + " milliseconds.");
+//
+//     start = now();
+//     for (i = 0; i < 10000; ++i) {
+//         answer.v2(randomstring.generate(10));
+//     }
+//     end = now();
+//
+//     console.log("V2 took " + ((end - start).toFixed(3)) + " milliseconds.");
+//
+// }());
 
-    var answer = new Implementation();
-    var now = require("performance-now");
-    var randomstring = require("randomstring");
-    var i;
-    var start;
-    var end;
-
-    console.log("==== Fixed String ====");
-
-    start = now();
-    for (i = 0; i < 10000; ++i) {
-        answer.v1("ababababababcdefabc");
-    }
-    end = now();
-
-    console.log("V1 took " + ((end - start).toFixed(3)) + " milliseconds.");
-
-    start = now();
-    for (i = 0; i < 10000; ++i) {
-        answer.v2("ababababababcdefabc");
-    }
-    end = now();
-
-    console.log("V2 took " + ((end - start).toFixed(3)) + " milliseconds.");
-
-    console.log("==== Random same length String ====");
-
-    start = now();
-    for (i = 0; i < 10000; ++i) {
-        answer.v1(randomstring.generate(10));
-    }
-    end = now();
-
-    console.log("V1 took " + ((end - start).toFixed(3)) + " milliseconds.");
-
-    start = now();
-    for (i = 0; i < 10000; ++i) {
-        answer.v2(randomstring.generate(10));
-    }
-    end = now();
-
-    console.log("V2 took " + ((end - start).toFixed(3)) + " milliseconds.");
-
-})();
+module.exports = Implementation;

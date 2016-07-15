@@ -5,9 +5,9 @@
 var BinaryHeap = require("./binaryheap");
 
 // Main
-(function() {
-    "use strict";
-
-    // var heap = new BinaryHeap();
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var heap = new BinaryHeap();
+//
+// }());

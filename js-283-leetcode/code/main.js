@@ -37,20 +37,18 @@ function Implementation() {
     };
 
     return {
-        v1: function(nums) {
-            return moveZeroes(nums);
-        }
+        v1: moveZeroes
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//
+// }());
 
 module.exports = Implementation;

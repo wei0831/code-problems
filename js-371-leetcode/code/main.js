@@ -30,20 +30,18 @@ function Implementation() {
     };
 
     return {
-        v1: function(a, b) {
-            return getSum(a, b);
-        }
+        v1: getSum
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//
+// }());
 
 module.exports = Implementation;

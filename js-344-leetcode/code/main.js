@@ -27,22 +27,20 @@ function Implementation() {
     };
 
     return {
-        v1: function(s) {
-            return reverseString(s);
-        }
+        v1: reverseString
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-    // var test = "abcd";
-    // console.log(answer.v1(test));
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//     // var test = "abcd";
+//     // console.log(answer.v1(test));
+//
+// }());
 
 module.exports = Implementation;

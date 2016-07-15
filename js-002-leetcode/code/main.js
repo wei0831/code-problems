@@ -1,13 +1,23 @@
 /**
- * Authoer: Jack Chang
- * Data: 06/20/2016
+ *
+ * @author Jack Chang
  */
+
 var ListNode = require("./linkedlist");
 
-// Implementation
+/**
+ * Implementation class
+ *
+ * @class
+ */
 function Implementation() {
     "use strict";
 
+    /**
+     * private Function
+     *
+     * @function
+     */
     var addTwoNumbers = function(l1, l2) {
         var result = new ListNode(null);
         var carry = 0;
@@ -23,6 +33,7 @@ function Implementation() {
                 num += l2.val;
                 l2 = l2.next;
             }
+
             if (num >= 10) {
                 num -= 10;
                 carry = 1;
@@ -41,21 +52,16 @@ function Implementation() {
     };
 
     return {
-        result: function(l1, l2) {
-            return addTwoNumbers(l1, l2);
-        }
+        result: addTwoNumbers
     };
 }
 
-// Export Functions
-if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = Implementation;
-}
-
 // Main
-(function() {
-    "use strict";
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//     // console.log("This is main : ", answer.result());
+// }());
 
-    // var answer = new Implementation();
-    // console.log("This is main : ", answer.result());
-})();
+module.exports = Implementation;

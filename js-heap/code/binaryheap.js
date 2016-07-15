@@ -160,7 +160,4 @@ BinaryHeap.prototype = {
 
 };
 
-// Export Functions
-if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
-    module.exports = BinaryHeap;
-}
+module.exports = BinaryHeap;

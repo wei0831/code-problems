@@ -35,20 +35,18 @@ function Implementation() {
     };
 
     return {
-        v1: function(root) {
-            return invertTree(root);
-        }
+        v1: invertTree
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//
+// }());
 
 module.exports = Implementation;

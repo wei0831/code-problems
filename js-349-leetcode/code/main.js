@@ -16,25 +16,23 @@ function Implementation() {
      *
      * @function
      */
-     var intersection = function(nums1, nums2) {
+    var intersection = function(nums1, nums2) {
 
-     };
+    };
 
     return {
-        v1: function(nums1, nums2) {
-            return private_function(nums1, nums2);
-        }
+        v1: intersection
     };
 }
 
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    // var answer = new Implementation();
-
-})();
+// (function() {
+//     "use strict";
+//
+//     // var answer = new Implementation();
+//
+// }());
 
 module.exports = Implementation;
