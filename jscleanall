@@ -4,6 +4,7 @@ for dir in `find . -maxdepth 1 -name "js-*" -type d `
 do
   if [ -d "${dir}" ]; then
       cd ${dir}
+      pwd
       grunt clean
       cd ..
   fi
