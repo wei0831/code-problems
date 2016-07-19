@@ -15,14 +15,6 @@ jasmine.getEnv().addReporter(new SpecReporter({
     displayStacktrace: "none"
 }));
 
-jrunner.loadConfig({
-    spec_dir: 'spec',
-    spec_files: [
-        'spec*.js'
-    ],
-    helpers: [],
-    stopSpecOnExpectationFailure: false,
-    random: false
-});
+jrunner.loadConfigFile('spec/support/jasmine.json');
 
 jrunner.execute();

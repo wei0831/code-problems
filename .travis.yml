@@ -14,4 +14,4 @@ addons:
 before-script:
   - npm install grunt-cli -g
 script:
-  - bash .travis-test.sh
+  - bash .jstestall.sh
