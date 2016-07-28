@@ -45,7 +45,6 @@ function Implementation() {
     };
 
     return {
-        result: lengthOfLongestSubstring_v1,
         v1: lengthOfLongestSubstring_v1,
         v2: lengthOfLongestSubstring_v2
     };
