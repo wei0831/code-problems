@@ -43,12 +43,12 @@ function Implementation() {
 /**
  * Main
  */
-(function() {
-    "use strict";
-
-    var answer = new Implementation();
-    console.log(answer.v1([1, 2, 3, 4, 5, 7, 7]));
-
-}());
+// (function() {
+//     "use strict";
+//
+//     var answer = new Implementation();
+//     console.log(answer.v1([1, 2, 3, 4, 5, 7, 7]));
+//
+// }());
 
 module.exports = Implementation;
