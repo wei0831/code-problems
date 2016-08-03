@@ -29,21 +29,21 @@ describe("V1 Test Cases", function() {
     });
 
     it("Input [1,2] = false", function() {
-        var input = [1,2];
+        var input = [1, 2];
         var output = false;
         expect(answer.v1(input)).toEqual(output);
     });
 
     it("Input [1,2,3,3] = true", function() {
-        var input = [1,2,3,3];
+        var input = [1, 2, 3, 3];
         var output = true;
         expect(answer.v1(input)).toEqual(output);
     });
 
     it("Input [1,1,1,1] = true", function() {
-        var input = [1,1,1,1];
+        var input = [1, 1, 1, 1];
         var output = true;
         expect(answer.v1(input)).toEqual(output);
     });
-    
+
 });

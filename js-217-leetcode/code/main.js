@@ -19,16 +19,15 @@ function Implementation() {
      * @return {boolean}
      */
     var containsDuplicate = function(nums) {
-      var table = {};
-      for(var i =0; i < nums.length; ++i){
-        if(table[nums[i]]){
-          return true;
+        var table = {};
+        for (var i = 0; i < nums.length; ++i) {
+            if (table[nums[i]]) {
+                return true;
+            } else {
+                table[nums[i]] = 1;
+            }
         }
-        else{
-          table[nums[i]] = 1;
-        }
-      }
-      return false;
+        return false;
     };
 
     return {
