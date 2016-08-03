@@ -32,7 +32,7 @@ function Implementation() {
 // (function() {
 //     "use strict";
 //
-//     // var answer = new Implementation();
+//     var answer = new Implementation();
 //
 // }());
 
