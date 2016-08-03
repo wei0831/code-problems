@@ -33,7 +33,7 @@ function Implementation() {
 //     "use strict";
 //
 //     var answer = new Implementation();
-//
+//     console.log(answer.v1());
 // }());
 
 module.exports = Implementation;
