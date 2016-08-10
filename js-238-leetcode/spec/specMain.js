@@ -17,14 +17,14 @@ describe("V1 Test Cases", function() {
     "use strict";
 
     it("Input [1,1,1,1,1] = [1,1,1,1,1]", function() {
-        var input = [1,1,1,1,1];
-        var output = [1,1,1,1,1];
+        var input = [1, 1, 1, 1, 1];
+        var output = [1, 1, 1, 1, 1];
         expect(answer.v1(input)).toEqual(output);
     });
 
     it("Input [0,1,2] = [2,0,0]", function() {
-        var input = [0,1,2];
-        var output = [2,0,0];
+        var input = [0, 1, 2];
+        var output = [2, 0, 0];
         expect(answer.v1(input)).toEqual(output);
     });
 
@@ -35,8 +35,8 @@ describe("V1 Test Cases", function() {
     });
 
     it("Input [2,3,4] = [12,8,6]", function() {
-        var input = [2,3,4];
-        var output = [12,8,6];
+        var input = [2, 3, 4];
+        var output = [12, 8, 6];
         expect(answer.v1(input)).toEqual(output);
     });
 
