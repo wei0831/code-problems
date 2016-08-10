@@ -2,12 +2,13 @@
  *
  * @author Jack Chang
  */
-var ListNode = require('listNode')
-    /**
-     * Implementation class
-     *
-     * @class
-     */
+var ListNode = require('./listNode');
+
+/**
+ * Implementation class
+ *
+ * @class
+ */
 function Implementation() {
     "use strict";
 
@@ -27,7 +28,7 @@ function Implementation() {
                 cur = cur.next;
             }
         }
-        return head
+        return head;
     };
 
     return {
