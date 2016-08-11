@@ -16,8 +16,4 @@ describe("Test Code Problem", function() {
 describe("V1 Test Cases", function() {
     "use strict";
 
-    it("expects true to be true", function() {
-        expect(answer.v1()).toEqual(true);
-    });
-
 });
