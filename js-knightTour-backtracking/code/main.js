@@ -61,16 +61,6 @@ function Implementation(N) {
     };
 
     /**
-     * private Function
-     *
-     * @function
-     * @return {boolean}
-     */
-    var solve = function() {
-        return tour(0, 0, 1);
-    };
-
-    /**
      * Recursive Checking Path
      *
      * @function
@@ -124,6 +114,16 @@ function Implementation(N) {
         board[x][y] = 0;
 
         return false;
+    };
+
+    /**
+     * private Function
+     *
+     * @function
+     * @return {boolean}
+     */
+    var solve = function() {
+        return tour(0, 0, 1);
     };
 
     _init();
