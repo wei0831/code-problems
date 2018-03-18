@@ -12,6 +12,3 @@ js-1-leetcode = Javascript Problem #1 from leetcode
 - [language]-[data structure/algorithm]  
 **Example:**
 js-linkedlist = Javascript Linkedlist
-
-## Author
-Jack Chang
